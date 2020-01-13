@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, graphql, useStaticQuery } from "gatsby";
 
-import github from "../../assets/github-dark.svg";
+import github from "../../assets/github.svg";
 import linkedin from "../../assets/linkedin.svg";
 import twitter from "../../assets/twitter.svg";
 import footerStyles from "./footer.module.scss";
