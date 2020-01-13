@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+
+.introduction {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    
+    div {
+      justify-self: flex-start;
+
+      h2 {
+        width: 40vw;
+        color: white;
+      }
+    }
+}
+
+.image {
+    justify-self: flex-end;
+    width: 40%;
+    height: auto;
+}
+
+.work {
+  width: 95%;
+  margin: 0 auto;
+  h3 {
+    color: white;
+  }
+}
+
+.projects {
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  font-weight: normal;
+  flex-wrap: wrap;
+  
+  .heading {
+    color: #67d5c7;
+    font-weight: 100;
+    font-family: 'Inconsolata', monospace !important;
+    margin: 0;
+  }
+  .title {
+    color: #b14184;
+    font-weight: normal;
+    margin: 10px 0 0 0;
+  }
+}
+
+.project {
+  width: 350px;
+  height: 350px;
+  font-family: 'Inconsolata', monospace !important;
+  margin: 10px 0;
+  padding: 2px 10px;
+  box-shadow: rgba(0, 0, 0, 0.11) 0px 1px 6px 0px;
+  background-color: rgb(17, 13, 41);
+  border-radius: 3px;
+  transition: 0.2s ease-in-out;
+  .tools {
+    display: flex;
+    position: relative;
+    top: 2px;
+    left: 2px;
+    margin: 0 auto;
+
+    :first-child {
+      background-color: #FF605C;
+    }
+    :nth-child(2) {
+      background-color: #FFBD44;
+    }
+    :nth-child(3) {
+      background-color: #00CA4E;
+    }
+    span {
+      width: 10px;
+      height: 10px;
+      margin: 4px 7px 8px 0;
+      border-radius: 50%;
+    }
+  }
+
+  .details {
+    width: 90%;
+    margin: 10px 0;
+    font-size: 14px;
+
+    > span {
+
+      .link {
+        width: 10px;
+        height: 10px;
+        margin: 0 10px 0 0;
+      }
+    }
+    
+    a {
+      color: #7263fd;
+      text-decoration: none;
+      transition: 0.1s ease-in-out;
+    }
+    a:hover {
+      color: #fff;
+      text-shadow: 0px 0px 4px #7263fd, 0px 0px 7px #7263fd, 0px 0px 10px #7263fd, 0px 0px 15px #7263fd;
+    }
+  }
+
+  .description {
+    color: #eeccaa;
+    font-size: 16px;
+  }
+}

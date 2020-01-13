@@ -5,5 +5,12 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: 'Portfolio Website',
+    author: 'Nikhil Vats'
+  },
+  plugins: [
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sass'
+  ]
 }
