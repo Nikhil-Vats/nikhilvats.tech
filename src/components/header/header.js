@@ -6,6 +6,7 @@ import headerStyles from './header.module.scss';
 import github from "../../assets/github.svg";
 import linkedin from "../../assets/linkedin.svg";
 import twitter from "../../assets/twitter.svg";
+import logo from "../../assets/logo.svg";
 
 const Header = () => {
     const data = useStaticQuery(graphql`
@@ -22,6 +23,7 @@ const Header = () => {
             {/* <h1><Link className={headerStyles.title} to="/">{data.site.siteMetadata.title}</Link></h1> */}
             <nav>
                 <ul className={headerStyles.navList}>
+                    <li><img src={logo} /></li>
                     <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/">Home</Link></li>
                     <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/blog">Blog</Link></li>
                     <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/about">About</Link></li>

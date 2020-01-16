@@ -33,11 +33,19 @@
 
 .projects {
   margin: 30px 0;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
   font-weight: normal;
-  flex-wrap: wrap;
-  
+}
+
+.project {
+  font-family: 'Inconsolata', monospace !important;
+  padding: 2px 10px;
+  box-shadow: rgba(0, 0, 0, 0.11) 0px 1px 6px 0px;
+  background-color: rgb(17, 13, 41);
+  border-radius: 3px;
+  transition: 0.2s ease-in-out;
   .heading {
     color: #67d5c7;
     font-weight: 100;
@@ -49,18 +57,6 @@
     font-weight: normal;
     margin: 10px 0 0 0;
   }
-}
-
-.project {
-  width: 350px;
-  height: 350px;
-  font-family: 'Inconsolata', monospace !important;
-  margin: 10px 0;
-  padding: 2px 10px;
-  box-shadow: rgba(0, 0, 0, 0.11) 0px 1px 6px 0px;
-  background-color: rgb(17, 13, 41);
-  border-radius: 3px;
-  transition: 0.2s ease-in-out;
   .tools {
     display: flex;
     position: relative;
@@ -89,16 +85,23 @@
     width: 90%;
     margin: 10px 0;
     font-size: 14px;
+    display: flex;
+    flex-direction: column;
 
     > span {
+      display: flex;
+      align-items: center;
 
       .link {
-        width: 10px;
-        height: 10px;
+        width: 15px;
+        height: 15px;
         margin: 0 10px 0 0;
       }
     }
-    
+    p {
+      margin-bottom: 0;
+      color: #7263fd;
+    }
     a {
       color: #7263fd;
       text-decoration: none;
@@ -113,5 +116,17 @@
   .description {
     color: #eeccaa;
     font-size: 16px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .projects {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .projects {
+    grid-template-columns: 1fr;
   }
 }
