@@ -1,0 +1,32 @@
+.form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-gap: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+.email, .message {
+    color: rgba(208, 197, 255, 0.884);
+    padding: 2px;
+    background: #3c376a;
+    border: none;
+    border-left: 4px solid #fff;
+    outline: none;
+    font-weight: 600;
+}
+
+.message {
+    resize: none;
+}
+
+.button {
+    cursor: pointer;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #575a89;
+    border: none;
+    background: #fff;
+}

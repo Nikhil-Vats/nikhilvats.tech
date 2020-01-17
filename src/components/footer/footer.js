@@ -1,9 +1,14 @@
 import React from "react";
 import { Link, graphql, useStaticQuery } from "gatsby";
+import Form from "../form/form";
 
 import github from "../../assets/github.svg";
 import linkedin from "../../assets/linkedin.svg";
 import twitter from "../../assets/twitter.svg";
+import react from "../../assets/react.svg";
+import gatsby from "../../assets/gatsby.svg";
+import like from "../../assets/like.svg";
+import logo from "../../assets/logo2.svg"
 import footerStyles from "./footer.module.scss";
 const Footer = () => {
     const data = useStaticQuery(graphql`
@@ -17,29 +22,19 @@ const Footer = () => {
     `)
     return (
         <div className={footerStyles.footer}>
-            <div className={footerStyles.blog}>
-                <h3>Recent Blogs</h3>
-                <div className={footerStyles.blogList}>
-                    <a href="">A full tutorial to CSS Grids and list of resources</a>
-                    <a href="">GatsbyJS tutorial and resources with Contentful and netlify</a>
-                    <a href="">10 tips to increase your productivity in VS Code</a>
-                    <a href="">A full tutorial to CSS Grids and list of resources</a>
-                    <a href="">GatsbyJS tutorial and resources with Contentful and netlify</a>
-                    <a href="">10 tips to increase your productivity in VS Code</a>
-                </div>
+            <div className={footerStyles.contact}>
+                <h3>Contact me</h3>
+                <Form />
             </div>
             <div className={footerStyles.links}>
-                <Link className={footerStyles.navItem} activeClassName={footerStyles.activeNavItem} to="/">Home</Link>
-                <Link className={footerStyles.navItem} activeClassName={footerStyles.activeNavItem} to="/blog">Blog</Link>
-                <Link className={footerStyles.navItem} activeClassName={footerStyles.activeNavItem} to="/about">About</Link>
-                <Link className={footerStyles.navItem} activeClassName={footerStyles.activeNavItem} to="/contact">Contact</Link>
+                <div className={footerStyles.logo}> <img src={logo}></img></div>
                 <span>
                     <a href="https://github.com/Nikhil-Vats" target="_blank"><img src={github} /></a>
                     <a href="https://www.linkedin.com/in/nikhil-vats/" target="_blank"><img src={linkedin} /></a>
                     <a href="https://twitter.com/NikhilVatss" target="_blank"><img src={twitter} /></a>
                 </span>
             </div>
-            <p>Created by {data.site.siteMetadata.author} © {new Date().getFullYear()}.</p>
+            <p>Created by {data.site.siteMetadata.author} with <img src={like}/> using <img src={gatsby}/> and <img src={react} />© {new Date().getFullYear()}.</p>
         </div>
     )
 }
