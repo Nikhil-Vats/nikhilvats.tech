@@ -9,7 +9,7 @@
 .email, .message {
     color: rgba(208, 197, 255, 0.884);
     padding: 2px;
-    background: #3c376a;
+    background: #121922;
     border: none;
     border-left: 4px solid #fff;
     outline: none;
@@ -26,7 +26,7 @@
     font-size: 1.3rem;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #575a89;
+    color: #121922;
     border: none;
     background: #fff;
 }
