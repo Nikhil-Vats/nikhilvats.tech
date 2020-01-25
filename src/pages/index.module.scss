@@ -10,7 +10,7 @@
     div {
       justify-self: flex-start;
 
-      h2 {
+      .line1 {
         width: 40vw;
         color: white;
       }
@@ -19,7 +19,7 @@
 
 .image {
     justify-self: flex-end;
-    width: 40%;
+    width: 30%;
     height: auto;
 }
 
@@ -142,5 +142,20 @@
 @media (max-width: 650px) {
   .projects {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 525px) {
+  .introduction {
+    flex-direction: column;
+    
+    .line1 {
+      width: inherit !important;
+    }
+
+    .image {
+      margin: 50px 0;
+      width: 50%;
+    }
   }
 }

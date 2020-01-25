@@ -75,6 +75,7 @@
         align-items: center;
         img {
             width: 40%;
+            margin-bottom: 0;
         }
     }
 
@@ -83,6 +84,10 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 10px;
         
+        a {
+            height: 25px;
+        }
+
         img {
             width: 25px;
             height: 25px;

@@ -7,7 +7,7 @@ import Head from "../components/head";
 import link from "../assets/link.svg";
 import location from "../assets/location.svg";
 import date from "../assets/date.svg"
-import codeSvg from "../assets/code_music.svg";
+import logo from "../assets/logo1.png";
 import indexStyles from "./index.module.scss";
 
 const IndexPage = () => {
@@ -31,8 +31,11 @@ const IndexPage = () => {
         <Layout>
             <Head title="Home"/>
             <div className={indexStyles.introduction}>
-                <div><h2 className={indexStyles.line1}>Hello, I'm Nikhil, a full-stack developer living in India!</h2></div>
-                <img className={indexStyles.image} src={codeSvg} alt="" />
+                <div>
+                    <h2 className={indexStyles.line1}>Hello, I'm Nikhil, a full-stack developer living in India!</h2>
+                    {/* <h2>I am experienced in React.js and Node.js and looking for Summer Internships 2020 right now!</h2> */}
+                </div>
+                <img className={indexStyles.image} src={logo} alt="" />
             </div>
             <div className={indexStyles.work}>
                 <h3>Work</h3>

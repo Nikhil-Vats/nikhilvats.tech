@@ -8,7 +8,7 @@ import twitter from "../../assets/twitter.svg";
 import react from "../../assets/react.svg";
 import gatsby from "../../assets/gatsby.svg";
 import like from "../../assets/like.svg";
-import logo from "../../assets/logo2.svg"
+import codeSVG from "../../assets/master_plan1.svg"
 import footerStyles from "./footer.module.scss";
 const Footer = () => {
     const data = useStaticQuery(graphql`
@@ -27,7 +27,7 @@ const Footer = () => {
                 <Form />
             </div>
             <div className={footerStyles.links}>
-                <div className={footerStyles.logo}> <img src={logo}></img></div>
+                <div className={footerStyles.logo}> <img src={codeSVG}></img></div>
                 <span>
                     <a href="https://github.com/Nikhil-Vats" target="_blank"><img src={github} /></a>
                     <a href="https://www.linkedin.com/in/nikhil-vats/" target="_blank"><img src={linkedin} /></a>

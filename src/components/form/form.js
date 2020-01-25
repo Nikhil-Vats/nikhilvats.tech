@@ -20,8 +20,8 @@ class Form extends React.Component {
         action="https://formspree.io/mqkpyknd"
         method="POST"
       >
-        <input className={formStyles.email} type="email" name="email" spellCheck={false} placeholder="yourname@example.com" />
-        <textarea className={formStyles.message} type="text" name="message" spellCheck={false} placeholder="Write your message here!" />
+        <input className={formStyles.email} type="email" required={true} name="email" spellCheck={false} placeholder="yourname@example.com" />
+        <textarea className={formStyles.message} type="text" required={true} name="message" spellCheck={false} placeholder="Write your message here!" />
         {
           status === "-"
             ?<button className={formStyles.button}>Submit</button>
