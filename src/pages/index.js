@@ -51,8 +51,8 @@ const IndexPage = () => {
                                     <span><img src={location} className={indexStyles.link} alt="link" /><p>{a.location}</p></span>
                                     <span><img src={date} className={indexStyles.link} alt="link" /><p>{a.date}</p></span>
                                 </div>
-                                <p className={indexStyles.description}>{'/*'} {a.description} {'*/'}</p>
-                                <p className={indexStyles.heading}>{'}'}</p>
+                                <ul className={indexStyles.description}>{'/*'} {a.description.map(val => <li>{val}</li>)} {'*/'}</ul>
+                                <p className={indexStyles.end}>{'}'}</p>
                             </div>
                         )
                     })}
