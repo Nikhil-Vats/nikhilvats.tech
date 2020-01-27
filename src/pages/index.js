@@ -8,6 +8,7 @@ import link from "../assets/link.svg";
 import location from "../assets/location.svg";
 import date from "../assets/date.svg"
 import logo from "../assets/logo1.png";
+import arrow from "../assets/up-arrow.svg";
 import indexStyles from "./index.module.scss";
 
 const IndexPage = () => {
@@ -27,6 +28,9 @@ const IndexPage = () => {
             }
         }
     `)
+    // scrollIntoViewA() {
+    //     document.body.current.scrollIntoView({behavior: 'smooth'})
+    // }
     return (
         <Layout>
             <Head title="Home"/>
@@ -61,6 +65,7 @@ const IndexPage = () => {
                     })}
                 </div>
             </div>
+            <img onClick={() => window.scrollTo(0,0)} className={indexStyles.upArrow} src={arrow} alt="Arrow" />
         </Layout>
     );
 }
