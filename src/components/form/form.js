@@ -27,7 +27,7 @@ class Form extends React.Component {
             ?<button className={formStyles.button}>Submit</button>
             :status === "SUCCESS"
               ?<button className={formStyles.success}>Done!</button>
-              :<button className={formStyles.error}>Error!</button>
+              :<button className={formStyles.error}>Error, click again to retry!</button>
         }
       </form>
     );

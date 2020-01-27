@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
 .footer {
-    font-family: 'Lato', sans-serif;
+    font-family: Roboto, Helvetica, sans-serif;
     bottom: 0;
     left: 0;
     padding: 10px;
     display: grid;
+    width: 100vw;
     grid-template-columns: 7fr 3fr;
     grid-template-rows: 1fr auto;
     grid-template-areas: 
         "contact links"
         "credit links";
-    background: #000f;
+    background: #000;
     > p {
         display: flex;
         align-items: center;

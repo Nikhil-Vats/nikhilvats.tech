@@ -3,7 +3,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr 1fr;
     grid-gap: 20px;
-    font-family: 'Lato', sans-serif;
+    font-family: Roboto, Helvetica, sans-serif;
 }
 
 .email, .message {
@@ -13,14 +13,13 @@
     border: none;
     border-left: 4px solid #fff;
     outline: none;
-    font-weight: 600;
 }
 
 .message {
     resize: none;
 }
 
-.button {
+.button, .success, .error {
     cursor: pointer;
     font-family: 'Bebas Neue', cursive;
     font-size: 1.3rem;
@@ -30,3 +29,18 @@
     border: none;
     background: #fff;
 }
+
+.button:focus, .error:focus, .success:focus {
+    outline: none;
+}
+
+.success { 
+    background: #00CA4E;
+    color: white;
+}
+
+.error {
+    background:#FF605C;
+    color: white;
+}
+

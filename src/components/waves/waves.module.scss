@@ -1,0 +1,35 @@
+.svg {
+    width:100%;
+    height: 100%;
+    overflow:visible;
+    position: absolute;
+    z-index: -1;
+}
+
+.wave {
+    animation: wave 3s linear;
+    animation-iteration-count:infinite;
+    fill: #4478e3;
+}
+.gooeff {
+    filter: url(#goo);
+}
+.wave2 {
+    animation: wave 5s linear;
+    animation-iteration-count:infinite;
+    animation-direction: reverse;
+    fill: #4478e3;
+    opacity: .6
+}
+.wave3 {
+    animation: wave 7s linear;
+    animation-iteration-count:infinite;
+    fill: #4478e3;
+    opacity:.3;
+}
+@keyframes wave {
+    to {transform: translateX(-100%);}
+}
+          
+          
+          
