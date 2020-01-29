@@ -49,3 +49,7 @@
 .active-nav-item {
     color: #ffffff;
 }
+
+_:default:not(:root:root), .safari_only {
+    letter-spacing: -1px;
+}

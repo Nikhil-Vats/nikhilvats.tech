@@ -19,7 +19,7 @@ const Header = () => {
         }
     `)
     return (
-        <header className={headerStyles.header}>
+        <header className={[headerStyles.header,headerStyles.safari_only].join(" ")}>
             {/* <h1><Link className={headerStyles.title} to="/">{data.site.siteMetadata.title}</Link></h1> */}
             <nav>
                 <ul className={headerStyles.navList}>
