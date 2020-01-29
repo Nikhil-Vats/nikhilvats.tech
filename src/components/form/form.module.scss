@@ -1,17 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
 .form {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 4fr 1fr;
     grid-gap: 20px;
-    font-family: Roboto, Helvetica, sans-serif;
+    font-family: 'Muli', sans-serif;
+    margin-bottom: 0;
 }
 
 .email, .message {
-    color: rgba(208, 197, 255, 0.884);
-    padding: 2px;
-    background: #121922;
+    color: #fff;
+    padding: 2px 5px;
+    background: transparent;
     border: none;
-    border-left: 4px solid #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
     outline: none;
 }
 
@@ -25,8 +29,9 @@
     font-size: 1.3rem;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #121922;
+    color: #7263fd;
     border: none;
+    border-radius: 10px;
     background: #fff;
 }
 
@@ -34,13 +39,19 @@
     outline: none;
 }
 
+@media (max-width: 550px) {
+    .email, .message, .button, .success, .error {
+        border-radius: 5px;
+    }
+}
+
 .success { 
-    background: #00CA4E;
+    background: #3ad29f;
     color: white;
 }
 
 .error {
-    background:#FF605C;
+    background:#ff605c;
     color: white;
 }
 

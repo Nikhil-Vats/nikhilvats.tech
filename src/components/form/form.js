@@ -1,6 +1,6 @@
 import React from "react";
 
-import formStyles from "./form.module.css";
+import formStyles from "./form.module.scss";
 
 class Form extends React.Component {
   constructor(props) {
@@ -20,8 +20,9 @@ class Form extends React.Component {
         action="https://formspree.io/mqkpyknd"
         method="POST"
       >
-        <input className={formStyles.email} type="email" required={true} name="email" spellCheck={false} placeholder="yourname@example.com" />
-        <textarea className={formStyles.message} type="text" required={true} name="message" spellCheck={false} placeholder="Write your message here!" />
+        <input className={formStyles.email} type="email" required={true} name="email" spellCheck={false} placeholder="Email *" />
+        <input className={formStyles.email} type="text" required={true} name="subject" spellCheck={false} placeholder="Subject *" />
+        <textarea className={formStyles.message} type="text" required={true} name="message" spellCheck={false} placeholder="Write your message here! *" />
         {
           status === "-"
             ?<button className={formStyles.button}>Submit</button>

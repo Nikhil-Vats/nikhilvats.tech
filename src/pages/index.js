@@ -9,7 +9,7 @@ import location from "../assets/location.svg";
 import date from "../assets/date.svg"
 import logo from "../assets/logo1.png";
 import arrow from "../assets/up-arrow.svg";
-import indexStyles from "./index.module.scss";
+import indexStyles from "../styles/index.module.scss";
 
 const IndexPage = () => {
     const data = useStaticQuery(graphql`
