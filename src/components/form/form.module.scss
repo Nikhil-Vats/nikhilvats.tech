@@ -15,7 +15,7 @@
     background: transparent;
     border: none;
     border: 1px solid #fff;
-    border-radius: 10px;
+    border-radius: 4px;
     outline: none;
 }
 
@@ -31,18 +31,12 @@
     text-transform: uppercase;
     color: #7263fd;
     border: none;
-    border-radius: 10px;
+    border-radius: 4px;
     background: #fff;
 }
 
 .button:focus, .error:focus, .success:focus {
     outline: none;
-}
-
-@media (max-width: 550px) {
-    .email, .message, .button, .success, .error {
-        border-radius: 5px;
-    }
 }
 
 .success { 
