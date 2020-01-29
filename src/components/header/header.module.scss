@@ -28,6 +28,14 @@
     }
 }
 
+.menu {
+    display: none;
+    width: 25px;
+    height: 25px;
+    margin-bottom: 0;
+    float: right;
+}
+
 .nav-list {
     display: inline-flex;
     list-style-type: none;
@@ -52,4 +60,19 @@
 
 _:default:not(:root:root), .safari_only {
     letter-spacing: -1px;
+}
+
+@media (max-width: 500px) {
+    .socialLinks {
+        position: absolute;
+        top: 60px;
+        right: 1rem;
+        display: block;
+        transform: rotateX(90deg);
+        transform-origin: top;
+        transition: 0.1s ease-in-out;
+    }
+    .menu {
+        display: block;
+    }
 }
