@@ -1,58 +1,49 @@
 import React from "react";
 import Layout from "../components/layout/layout";
-// import { useStaticQuery, graphql, Link } from "gatsby";
+import { useStaticQuery, graphql, Link } from "gatsby";
 
-import blogStyles from "../styles/blog.module.scss";
+import blogStyles from "../styles/blogs.module.scss";
 import Head from "../components/head";
+import thumbnail from "../assets/blog_background.jpg";
 
 const BlogPage = () => {
-    // const data = useStaticQuery(graphql`
-    //     query {
-    //         allMarkdownRemsark {
-    //             edges {
-    //                 node {
-    //                     frontmatter {
-    //                         title
-    //                         date
-    //                     }
-    //                     html
-    //                     excerpt
-    //                     fields {
-    //                         slug
-    //                     }
-    //                 }
-    //             }
-    //         }
-    //     }
-    // `)
-    // return (
-    //     <Layout>
-    //         <h1>Blog</h1>
-    //         <ol className={blogStyles.posts}>
-    //            {data.allMarkdownRemark.edges.map(val => <li className={blogStyles.post}><Link to={`/blog/${val.node.fields.slug}`}><h2>{val.node.frontmatter.title}</h2><p>{val.node.frontmatter.date}</p></Link></li>)}
-    //         </ol>
-    //     </Layout>
-    // )
-    // const data = useStaticQuery(graphql`
-    //     query {
-    //         allContentfulBlogPost ( sort: { fields: publishedDate, order: DESC } ) {
-    //             edges {
-    //                 node {
-    //                     title
-    //                     slug
-    //                     publishedDate(formatString:"MMMM Do, YYYY")
-    //                 }
-    //             }
-
-    //         }
-    //     }
-    // `)
+    const data = useStaticQuery(graphql`
+        query {
+            allMarkdownRemark {
+                edges {
+                    node {
+                        frontmatter {
+                            title
+                            date
+                        }
+                        fields {
+                            slug
+                        }
+                    }
+                }
+            }
+        }
+    `)
+    console.log(data)
     return (
         <Layout>
-            <Head title="Blog" />
-            <h1>Blog</h1>
+            <Head title="Blog"></Head>
             <ol className={blogStyles.posts}>
-               {/* {data.allContentfulBlogPost.edges.map(val => <li className={blogStyles.post}><Link to={`/blog/${val.node.slug}`}><h2>{val.node.title}</h2><p>{val.node.publishedDate}</p></Link></li>)} */}
+              {data.allMarkdownRemark.edges.map((edge) => {
+                  return (
+                    <li className={blogStyles.post}>
+                        <Link to={`/blog/${edge.node.fields.slug}`}>
+                            <img src={thumbnail} className={blogStyles.thumbnail}/>
+                            <div className={blogStyles.summary}>
+                                <span className={blogStyles.details}>
+                                    <h2>{edge.node.frontmatter.title}</h2><p>{edge.node.frontmatter.date}</p>
+                                </span>
+                                <p>As a web developer, you spend most of your day in front of your IDE. If that's Visual Studio Code, here are some extension suggestions that can make you more productive. </p>
+                            </div>
+                        </Link>
+                    </li>
+                  )
+              })}  
             </ol>
         </Layout>
     )

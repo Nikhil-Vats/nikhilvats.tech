@@ -7,7 +7,7 @@ import Head from "../components/head";
 import link from "../assets/link.svg";
 import location from "../assets/location.svg";
 import date from "../assets/date.svg"
-import logo from "../assets/logo1.png";
+import logo from "../assets/logo.png";
 import arrow from "../assets/up-arrow.svg";
 import indexStyles from "../styles/index.module.scss";
 
@@ -28,9 +28,6 @@ const IndexPage = () => {
             }
         }
     `)
-    // scrollIntoViewA() {
-    //     document.body.current.scrollIntoView({behavior: 'smooth'})
-    // }
     return (
         <Layout>
             <Head title="Home"/>

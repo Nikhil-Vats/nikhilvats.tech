@@ -4,7 +4,6 @@ import Layout from "../components/layout/layout";
 import Head from "../components/head";
 import Form from "../components/form/form";
 import contactStyles from "../styles/contact.module.scss";
-import deliveryAddress from "../assets/delivery_address.svg";
 import contactUs from "../assets/contact_us.svg";
 const ContactPage = () => {
     return (
