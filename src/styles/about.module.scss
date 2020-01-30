@@ -1,0 +1,22 @@
+.layout {
+    font-family: 'Muli', sans-serif;
+    width: 70%;
+    margin: 0 auto 20px;
+
+    a {
+        text-decoration: none;
+        color: #7263fd;
+    }
+}
+
+@media (max-width: 550px) {
+    .layout {
+        width: 85%;
+    }
+}
+
+@media (max-width: 350px) {
+    .layout {
+        width: 90%;
+    }
+}
