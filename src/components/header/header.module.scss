@@ -58,10 +58,6 @@
     color: #ffffff;
 }
 
-_:default:not(:root:root), .safari_only {
-    letter-spacing: -1px;
-}
-
 @media (max-width: 500px) {
     .socialLinks {
         position: absolute;

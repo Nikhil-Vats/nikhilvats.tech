@@ -26,8 +26,7 @@ const Header = () => {
         dispState = !dispState;
     }
     return (
-        <header className={[headerStyles.header,headerStyles.safari_only].join(" ")}>
-            {/* <h1 onClick={() => showMenu()}>{data.site.siteMetadata.title}</h1> */}
+        <header className={headerStyles.header}>
             <nav>
                 <ul className={headerStyles.navList}>
                     <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/">Home</Link></li>
