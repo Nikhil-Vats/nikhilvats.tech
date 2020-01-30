@@ -1,0 +1,22 @@
+.layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    margin: 10px auto;
+    text-align: center;
+    justify-items: center;
+
+    .underConstruction {
+        width: 60%;
+        height: 40vh;
+    }
+
+    h3 {
+        margin-bottom: 0;
+    }
+
+    .link {
+        text-decoration: none;
+        color: #7263fd;
+    }
+}
