@@ -2,4 +2,38 @@
     img {
         box-shadow: none !important;
     }
+    font-family: 'Muli', sans-serif;
+    width: 70%;
+    margin: 40px auto;
+
+    pre, code {
+        background: whitesmoke;
+        color: black;
+    }
+    code {
+        padding-left: 10px;
+        margin-right: 5px;
+    }
+}
+
+.heading, .date {
+    width: 70%;
+    margin: 0 auto;
+    font-family: 'Muli', sans-serif;
+}
+
+.heading {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    .layout {
+        width: 85%;
+    }
+}
+
+@media (max-width: 400px) {
+    .layout {
+        width: 90%;
+    }
 }

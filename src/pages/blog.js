@@ -24,7 +24,7 @@ const BlogPage = () => {
             }
         }
     `)
-    console.log(data)
+    console.log(JSON.stringify(data.allMarkdownRemark.edges,undefined, 4));
     return (
         <Layout>
             <Head title="Blog"></Head>
@@ -38,7 +38,7 @@ const BlogPage = () => {
                                 <span className={blogStyles.details}>
                                     <h2>{edge.node.frontmatter.title}</h2><p>{edge.node.frontmatter.date}</p>
                                 </span>
-                                <p>As a web developer, you spend most of your day in front of your IDE. If that's Visual Studio Code, here are some extension suggestions that can make you more productive. </p>
+                                <p>As web developers we spend a lot of time going through complex nested data, read this blog to learn two ways to pretty print data to save time and make debugging easier! </p>
                             </div>
                         </Link>
                     </li>

@@ -79,6 +79,12 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.trackingId,
+      },
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'src',
@@ -94,7 +100,7 @@ module.exports = {
           {
             resolve: 'gatsby-remark-images',
             options: {
-              maxWidth: 750,
+              maxWidth: 1000,
               linkImagesToOriginal: false
             }
           }

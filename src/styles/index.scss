@@ -113,7 +113,9 @@ html {
   svg:not(:root) {
     overflow: hidden;
   }
-  code,
+  code {
+    font-family: 'Inconsolata', monospace !important;
+  }
   kbd,
   pre,
   samp {
@@ -613,6 +615,9 @@ html {
     padding: 0;
     padding-top: 0.2em;
     padding-bottom: 0.2em;
+  }
+  code {
+    font-family: 'Inconsolata', monospace !important;
   }
   pre code {
     background: none;
