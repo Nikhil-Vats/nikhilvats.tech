@@ -29,7 +29,10 @@
         padding: 1rem;
         color: #7263fd;
         transition: 0.2s ease-in-out !important;
-        > p {
+        .title {
+            margin-bottom: 0;
+        }
+        .description {
             font-family: 'Muli', sans-serif;
             font-size: 0.9rem;
         }
@@ -37,19 +40,20 @@
 
     .details {
         display: flex;
+        justify-content: flex-start;
         align-items: center;
         margin-bottom: 1rem;
 
-        h2 {
-            margin-bottom: 0;
-            padding-right: 10px;
-            margin-right: 10px;
-            border-right: 1px solid #6f63fd;
-        }
-    
-        p {
+        .date, .timeToRead {
             font-size: 0.8rem;
             font-style: italic;
+            margin-bottom: 0;
+        }
+
+        .timeToRead {
+            padding-left: 10px;
+            margin-left: 10px;
+            border-left: 1px solid #7263fd;
         }
     }
 

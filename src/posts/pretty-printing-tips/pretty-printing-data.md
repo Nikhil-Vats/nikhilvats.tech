@@ -1,5 +1,5 @@
 ---
-title: "Tips for pretty printing data in console"
+title: "Pretty printing data in console"
 date: "30 Jan, 2019"
 ---
 

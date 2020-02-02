@@ -12,6 +12,7 @@ const BlogPage = () => {
             allMarkdownRemark {
                 edges {
                     node {
+                        timeToRead
                         frontmatter {
                             title
                             date
@@ -35,10 +36,12 @@ const BlogPage = () => {
                         <Link to={`/blog/${edge.node.fields.slug}`}>
                             <img src={thumbnail} className={blogStyles.thumbnail}/>
                             <div className={blogStyles.summary}>
+                                <h3 className={blogStyles.title}>{edge.node.frontmatter.title}</h3>
                                 <span className={blogStyles.details}>
-                                    <h2>{edge.node.frontmatter.title}</h2><p>{edge.node.frontmatter.date}</p>
+                                    <p className={blogStyles.date}>{edge.node.frontmatter.date}</p>
+                                    <p className={blogStyles.timeToRead}>{edge.node.timeToRead} min</p>
                                 </span>
-                                <p>As web developers we spend a lot of time going through complex nested data, read this blog to learn two ways to pretty print data to save time and make debugging easier! </p>
+                                <p className={blogStyles.description}>As web developers we spend a lot of time going through complex nested data, read this blog to learn two ways to pretty print data to save time and make debugging easier! </p>
                             </div>
                         </Link>
                     </li>
