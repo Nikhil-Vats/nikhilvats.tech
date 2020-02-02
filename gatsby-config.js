@@ -102,8 +102,9 @@ module.exports = {
             options: {
               maxWidth: 1000,
               linkImagesToOriginal: false
-            }
-          }
+            },
+          },
+          `gatsby-remark-images-zoom`,
         ]
       }
     }

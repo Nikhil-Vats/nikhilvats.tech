@@ -3,6 +3,8 @@ title: "Tips for pretty printing data in console"
 date: "30 Jan, 2019"
 ---
 
+Tip: Click an image to zoom in and out.
+
 ### 1. Using console.table()
 
 You can use `console.table(data)` for pretty printing the data (array of objects, array of arrays) in the format of a table. 
@@ -49,8 +51,8 @@ You can also use `console.log(JSON.stringify(data, undefined, 4))` for pretty pr
 `JSON.stringify()` takes 3 parameters -
 
 - The first parameter contains the data. [Mandatory]
-- The second one is the replacer paramter which can be an array or a function. This parameter is used for filtering the properties of the object (ex - printing some selected fields only). [Optional]
-- The third one is the number of spaced to improve the readability of data by formatting it. The max value can be 10. [Optional]
+- The second one is the replacer parameter which can be an array or a function. This parameter is used for filtering the properties of the object (ex - printing some selected fields only). [Optional]
+- The third one is the number of spaces to improve the readability of data by formatting it. The max value can be 10. [Optional]
 
 Example - 
 ```
