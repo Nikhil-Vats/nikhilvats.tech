@@ -4,7 +4,7 @@ import { useStaticQuery, graphql, Link } from "gatsby";
 
 import blogStyles from "../styles/blogs.module.scss";
 import Head from "../components/head";
-import thumbnail from "../assets/blog_background.jpg";
+import thumbnail from "../assets/data-thumbnail.jpg";
 
 const BlogPage = () => {
     const data = useStaticQuery(graphql`
