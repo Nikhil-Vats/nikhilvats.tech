@@ -51,7 +51,7 @@ const IndexPage = () => {
                                 </div>
                                 <h4 className={indexStyles.heading}>{a.heading} (<span className={indexStyles.title}>{a.role}</span>) {'{'}</h4>
                                 <div className={indexStyles.details}>
-                                    <span><img src={link} className={indexStyles.link} alt="link" /><a href="">{a.heading}</a></span>
+                                    <span><img src={link} className={indexStyles.link} alt="link" /><a href={a.link} target="_blank">{a.heading}</a></span>
                                     <span><img src={location} className={indexStyles.link} alt="link" /><p>{a.location}</p></span>
                                     <span><img src={date} className={indexStyles.link} alt="link" /><p>{a.date}</p></span>
                                 </div>

@@ -72,6 +72,63 @@ module.exports = {
         ], 
         role: 'Developer',
         date: 'February - April, 2019'
+      },
+      {
+        heading: 'Coding Club',
+        link: 'https://github.com/CodingClubBITSP',
+        location: 'BITS Pilani',
+        description: [
+          'Developed websites and for many events and annual fests of BITS Pilani.',
+          'Organised several workshops and hackathons on Web and App Development, Video editing, Competitive Coding, etc.',
+          'Selected as the head of the club for the current academic year.'
+        ], 
+        role: 'Head',
+        date: 'April 2019 - Present'
+      },
+      {
+        heading: 'Wiser',
+        link: 'http://discovery.bits-pilani.ac.in:8000/',
+        location: 'BITS Pilani',
+        description: [
+          'Developed the website for a research project under a professor.',
+          'Website aims to address the well being of youth by asking them questions over a period of time.',
+          'Built with HTML, CSS, VanillaJS and Django.'
+        ], 
+        role: 'Developer',
+        date: 'February 2019'
+      },
+      {
+        heading: 'React Burger App',
+        link: 'https://github.com/Nikhil-Vats/React-Burger-App',
+        location: 'Remote',
+        description: [
+          'Developed a restaurant website in which users could sign up and order burgers.',
+          'Built with React and Google Firebase.'
+        ], 
+        role: 'Developer',
+        date: 'December 2018'
+      },
+      {
+        heading: 'Pixxel',
+        link: 'https://nikhil-vats.github.io/Pixxel-Main-Website/index.html',
+        location: 'Remote',
+        description: [
+          'Developed the home page for the website of a startup of my college.',
+          'Built with HTML, CSS and VanillaJS.'
+        ], 
+        role: 'Developer',
+        date: 'November 2018'
+      },
+      {
+        heading: 'Node Chat App',
+        link: 'https://vast-coast-28984.herokuapp.com/',
+        location: 'Remote',
+        description: [
+          'Wrote a chat website in which users in the same chat room can chat and share their location.',
+          'Built with Node.js, Express.js and socket.io.'
+        ], 
+        role: 'Developer',
+        date: 'July 2018'
       }
     ]
   },
