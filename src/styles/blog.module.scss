@@ -15,7 +15,7 @@
     }
 }
 
-.heading, .date {
+.heading, .date, .description {
     width: 70%;
     margin: 0 auto;
     font-family: 'Muli', sans-serif;
@@ -23,6 +23,10 @@
 
 .heading {
     margin-bottom: 10px;
+}
+
+.date {
+    margin-bottom: 40px;
 }
 
 @media (max-width: 600px) {

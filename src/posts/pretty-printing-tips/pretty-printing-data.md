@@ -1,13 +1,16 @@
 ---
 title: "Pretty printing data in console"
-date: "30 Jan, 2019"
+date: "30 Jan 2019"
+description: "As web developers we spend a lot of time going through complex nested data, read this blog to learn two ways to pretty-print data to save time and make debugging easier!"
 ---
+
+If you are a frontend developer, you must have spent a considerable amount of time looking at the structure of the complex nested data coming from backend. No one loves going to the browser's console and click on those tiny little arrows only to see 100s of lines of messy data. Read this post to increase your efficiency by learning two better ways of logging data to console.
 
 Tip: Click an image to zoom in and out.
 
 ### 1. Using console.table()
 
-You can use `console.table(data)` for pretty printing the data (array of objects, array of arrays) in the format of a table. 
+You can use `console.table(data)` for pretty-printing the data (array of objects, an array of arrays) in the format of a table. 
 
 Note that in Chrome `console.table(data)` may not work sometimes when the data is just an array of strings or numbers (data is not compound). In that case just use `console.table([data])`.
 
@@ -16,8 +19,8 @@ Note that in Chrome `console.table(data)` may not work sometimes when the data i
 console.table(data [, columns])
 ```
 
-The function takes two paramters - 
-1. Data to be pretty printed. [Mandatory]
+The function takes two parameters - 
+1. Data to be pretty-printed. [Mandatory]
 2. An array containing the columns to be included in the output. [Optional]
 
 Example - 
@@ -40,13 +43,13 @@ console.table([john, jane, emily], ["firstName"]);
 Result -
 ![Result](./console-table.png)
 
-You can also sort the table in ascending or descending order of any field by clicking the arrow in the column headers. The upward arrow in the right corner of second column indicates that table is arranged based on ascending order of first names.
+You can also sort the table in ascending or descending order of any field by clicking the arrow in the column headers. The upward arrow in the right corner of the second column indicates that the table is arranged based on the ascending order of first names.
 
 Keep in mind that `console.table()` is not supported in IE.
 
 ### 2. Using console.log() with JSON.stringify()
 
-You can also use `console.log(JSON.stringify(data, undefined, 4))` for pretty printing the data with whitespaces for readability.
+You can also use `console.log(JSON.stringify(data, undefined, 4))` for pretty-printing the data with whitespaces for readability.
 
 `JSON.stringify()` takes 3 parameters -
 

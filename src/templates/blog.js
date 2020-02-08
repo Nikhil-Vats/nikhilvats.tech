@@ -8,9 +8,11 @@ import blogStyles from "../styles/blog.module.scss";
 export const query = graphql`
     query($slug:String!) {
         markdownRemark ( fields: { slug: { eq: $slug } }) {
+            timeToRead
             frontmatter {
                 title
                 date
+                description
             }
             html
         }
@@ -22,7 +24,8 @@ const Blog = (props) => {
         <Layout>
             <Head title={props.data.markdownRemark.frontmatter.title}></Head>
             <h1 className={blogStyles.heading}>{props.data.markdownRemark.frontmatter.title}</h1>
-            <p className={blogStyles.date}>{props.data.markdownRemark.frontmatter.date}</p>
+            <p className={blogStyles.date}>{props.data.markdownRemark.frontmatter.date} || {props.data.markdownRemark.timeToRead} min</p>
+            <p className={blogStyles.description}>{props.data.markdownRemark.frontmatter.description}</p>
             <div className={blogStyles.layout} dangerouslySetInnerHTML={{__html: props.data.markdownRemark.html}}></div>
         </Layout>
     )

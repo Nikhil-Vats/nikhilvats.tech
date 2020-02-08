@@ -16,6 +16,7 @@ const BlogPage = () => {
                         frontmatter {
                             title
                             date
+                            description
                         }
                         fields {
                             slug
@@ -41,7 +42,7 @@ const BlogPage = () => {
                                     <p className={blogStyles.date}>{edge.node.frontmatter.date}</p>
                                     <p className={blogStyles.timeToRead}>{edge.node.timeToRead} min</p>
                                 </span>
-                                <p className={blogStyles.description}>As web developers we spend a lot of time going through complex nested data, read this blog to learn two ways to pretty print data to save time and make debugging easier! </p>
+                                <p className={blogStyles.description}>{edge.node.frontmatter.description}</p>
                             </div>
                         </Link>
                     </li>
