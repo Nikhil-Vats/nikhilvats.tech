@@ -44,17 +44,23 @@
         align-items: center;
         margin-bottom: 1rem;
 
-        .date, .timeToRead {
+        .date, .timeToRead, .articleNo {
             font-size: 0.8rem;
             font-style: italic;
             margin-bottom: 0;
         }
 
-        .timeToRead {
+        .timeToRead, .articleNo {
             padding-left: 10px;
             margin-left: 10px;
             border-left: 1px solid #7263fd;
         }
+    }
+
+    .series {
+        border: 1px solid #7263fd;
+        border-radius: 5px;
+        padding: 2px 4px;
     }
 
     a {

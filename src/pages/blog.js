@@ -16,6 +16,8 @@ const BlogPage = () => {
                             title
                             date
                             description
+                            series
+                            articleNo
                             featuredImage {
                                 childImageSharp {
                                   fluid(maxWidth: 800) {
@@ -42,14 +44,15 @@ const BlogPage = () => {
                   return (
                     <li className={blogStyles.post}>
                         <Link to={`/blog/${edge.node.fields.slug}`}>
-                            {/* <img src={edge.node.frontmatter.featuredImage.childImageSharp.fluid} className={blogStyles.thumbnail}/> */}
                             <Img fluid={featuredImgFluid} className={blogStyles.thumbnail} />
                             <div className={blogStyles.summary}>
                                 <h3 className={blogStyles.title}>{edge.node.frontmatter.title}</h3>
                                 <span className={blogStyles.details}>
                                     <p className={blogStyles.date}>{edge.node.frontmatter.date}</p>
                                     <p className={blogStyles.timeToRead}>{edge.node.timeToRead} min</p>
+                                    {edge.node.frontmatter.articleNo? <p className={blogStyles.articleNo}>Article {edge.node.frontmatter.articleNo}</p> : null}
                                 </span>
+                                {edge.node.frontmatter.series? <h5 className={blogStyles.series}>Series: {edge.node.frontmatter.series}</h5> : null}
                                 <p className={blogStyles.description}>{edge.node.frontmatter.description}</p>
                             </div>
                         </Link>
