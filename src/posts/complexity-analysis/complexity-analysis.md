@@ -39,7 +39,7 @@ O-notation, pronounced "big-oh notation", is used to describe the asymptotic upp
 For a given function, g(n) , we denote by O(g(n)) the set of functions,
 O(g(n)) = { f(n): there exist **positive constants c and n<sub>0</sub>** such that
 **0 <= f(n) <= c.g(n) for all n >= n<sub>0</sub>** }.
-![Big-O-notation-graph](https://dev-to-uploads.s3.amazonaws.com/i/m7acz08xwugmq2vh3gm7.png)
+![Big-O-notation-graph](Big-O-notation-graph.png)
 
 Some common O notations are -
 1. O(1) - constant, independent of size n
@@ -51,7 +51,7 @@ Some common O notations are -
 7. O(c<sup>n</sup>) where c > 1 - exponential
 8. O(n!) - factorial
 
-![Big O complexity chart](https://dev-to-uploads.s3.amazonaws.com/i/aixxzxil4rn7kr38nrn3.png)
+![Big O complexity chart](Big-O-complexity-chart.png)
 
 #### 2. Ω (Big-Omega) notation
 Ω-notation, pronounced "big-omega notation", is used to describe the asymptotic lower bound of an algorithm. Formally, it is defined as:
@@ -60,7 +60,7 @@ For a given function, g(n), we denote by Ω(g(n)) the set of functions,
 Ω(g(n)) = { f(n): there exist **positive constants c and n<sub>0</sub>** such that 
 **0 <= c.g(n) <= f(n) for all n >= n<sub>0</sub>** }. 
 
-![Big Omega](https://dev-to-uploads.s3.amazonaws.com/i/vs3tlsw98c9ixq14uz0i.png)
+![Big Omega](Big-Omega.png)
 
 #### 3. Θ (Theta) notation
 We talked about O notation above. The disadvantage of describing the complexity of an algorithm in terms of O notation is that if we say that an algorithm runs in f(n)=O(n<sup>2</sup>), then that algorithm could actually run in n time.
@@ -71,7 +71,7 @@ For a given function, g(n), we denote by Θ(g(n)) the set of
 functions
 Θ(g(n)) = { f(n): there exist **positive constants c1 , c2 , and n<sub>0</sub>** such that **0 ≤ c1.g(n) <= f(n) <= c2.g(n) for all n >= n<sub>0</sub>** }.
 
-![Theta-notation](https://dev-to-uploads.s3.amazonaws.com/i/gswj37ipze0qbdinr3tr.png)
+![Theta-notation](Theta-notation.png)
 
 #### 4. o (little-oh) notation
 
@@ -80,7 +80,7 @@ functions
 3.  For a given function, g(n), we denote by o(g(n)) the set of functions
 o(g(n)) = { f(n): for any positive constant **c > 0**, there exists a constant **n<sub>0</sub> > 0 such that 0 <= f(n) < c.g(n) for all n >= n<sub>0</sub>** }.
 4. The implication of this is that g(n) becomes insignificant relative to f(n) as n approaches infinity: 
-![limit for little oh](https://dev-to-uploads.s3.amazonaws.com/i/b2n7wi9zwkzwciisogi3.png)
+![limit for little oh](limit-for-little-oh.png)
 
 So the main differences between Big O and small O are points 2 and 4 and the fact that there is no equality in the definition of little oh (in point 3, compare with the definition of Big O). Apart from these, some other differences (picked from [here](https://stackoverflow.com/questions/1364444/difference-between-big-o-and-little-o-notation)) are -
 - In Big-O, it is only necessary that you find a particular multiplier c for which the inequality holds beyond some minimum n. In Little-o, it must be that there is a minimum x after which the inequality holds no matter how small you make c, as long as it is not negative or zero.
@@ -93,15 +93,15 @@ So the main differences between Big O and small O are points 2 and 4 and the fac
 2. For a given function, g(n), we denote by ω(g(n)) the set of functions
 ω(g(n)) = { f(n): for any positive constant **c > 0**, there exists a constant **n<sub>0</sub> > 0 such that 0 <= c.g(n) < f(n) for all n >= n<sub>0</sub>** }.
 3. The implication of this is that g(n) becomes insignificant relative to f(n) as n approaches infinity:
-![limit for small omega](https://dev-to-uploads.s3.amazonaws.com/i/mwof78w8th740wiuvnwz.png)
+![limit for small omega](limit-for-small-omega.png)
 
 We can analyze the differences between little and big omega in a similar manner as done above.
 
 Some relational properties of the notations are given below -
-![Transitivity](https://dev-to-uploads.s3.amazonaws.com/i/bliombyq2d56saqoj6k8.png)
+![Transitivity](transitivity.png)
 
-![Reflexivity](https://dev-to-uploads.s3.amazonaws.com/i/24b25nqi3obt0s8ujs7g.png)
+![Reflexivity](reflexivity.png)
 
-![Symmetry](https://dev-to-uploads.s3.amazonaws.com/i/g6ouyqv0f6p8kzm3actm.png)
+![Symmetry](symmetry.png)
 
-Thanks for bearing me, this was a long one for all of us. I hope you understood. If you have any doubts/suggestions/reviews, please let me know in the comment section. Your one single praise can go a long way in motivating me xD. In the coming articles, we will use the notations described above, so if you are lost about what the use of these notations is, read the next article.
+Thanks for bearing me, this was a long one for all of us. I hope you understood. If you have any doubts/suggestions/reviews, please let me know on [twitter](twitter.com/nikhilvatss). In the coming articles, we will use the notations described above, so if you are lost about what the use of these notations is, read the next article.
