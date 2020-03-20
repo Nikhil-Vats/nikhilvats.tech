@@ -2,6 +2,7 @@
 title: "Pretty printing data in console"
 date: "30 Jan 2019"
 description: "As web developers we spend a lot of time going through complex nested data, read this blog to learn two ways to pretty-print data to save time and make debugging easier!"
+featuredImage: "pretty-printing.png"
 ---
 
 If you are a frontend developer, you must have spent a considerable amount of time looking at the structure of the complex nested data coming from backend. No one loves going to the browser's console and click on those tiny little arrows only to see 100s of lines of messy data. Read this post to increase your efficiency by learning two better ways of logging data to console.

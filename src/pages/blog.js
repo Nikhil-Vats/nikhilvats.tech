@@ -1,11 +1,10 @@
 import React from "react";
 import Layout from "../components/layout/layout";
 import { useStaticQuery, graphql, Link } from "gatsby";
+import Img from "gatsby-image";
 
 import blogStyles from "../styles/blogs.module.scss";
 import Head from "../components/head";
-import thumbnail from "../assets/data-thumbnail.webp";
-
 const BlogPage = () => {
     const data = useStaticQuery(graphql`
         query {
@@ -17,6 +16,13 @@ const BlogPage = () => {
                             title
                             date
                             description
+                            featuredImage {
+                                childImageSharp {
+                                  fluid(maxWidth: 800) {
+                                    ...GatsbyImageSharpFluid
+                                  }
+                                }
+                            }
                         }
                         fields {
                             slug
@@ -32,10 +38,12 @@ const BlogPage = () => {
             <Head title="Blog"></Head>
             <ol className={blogStyles.posts}>
               {data.allMarkdownRemark.edges.map((edge) => {
+                  let featuredImgFluid = edge.node.frontmatter.featuredImage.childImageSharp.fluid;
                   return (
                     <li className={blogStyles.post}>
                         <Link to={`/blog/${edge.node.fields.slug}`}>
-                            <img src={thumbnail} className={blogStyles.thumbnail}/>
+                            {/* <img src={edge.node.frontmatter.featuredImage.childImageSharp.fluid} className={blogStyles.thumbnail}/> */}
+                            <Img fluid={featuredImgFluid} className={blogStyles.thumbnail} />
                             <div className={blogStyles.summary}>
                                 <h3 className={blogStyles.title}>{edge.node.frontmatter.title}</h3>
                                 <span className={blogStyles.details}>
