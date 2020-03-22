@@ -1,6 +1,6 @@
 ---
 title: Complexity Analysis
-date: March 18 2020
+date: March 18, 2020
 description: In this article, we will discuss different kinds of complexity analysis like the worst case, best case, and average case. We will also discuss various asymptotic notations which will enable us to analyze the performance of programs.
 featuredImage: complexity-analysis.jpg
 series: Data Structures and Algorithms - A complete course
@@ -104,4 +104,4 @@ Some relational properties of the notations are given below -
 
 ![Symmetry](symmetry.png)
 
-Thanks for bearing me, this was a long one for all of us. I hope you understood. If you have any doubts/suggestions/reviews, please let me know on [twitter](twitter.com/nikhilvatss). In the coming articles, we will use the notations described above, so if you are lost about what the use of these notations is, read the next article.
+Thanks for bearing me, this was a long one for all of us. I hope you understood. If you have any doubts/suggestions/reviews, please let me know on [twitter](https://twitter.com/NikhilVatss). In the coming articles, we will use the notations described above, so if you are lost about what the use of these notations is, read the next article.

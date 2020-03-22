@@ -1,6 +1,6 @@
 ---
 title: Introduction to DSA
-date: March 18 2020
+date: March 18, 2020
 description: This post will introduce you to the basics of Data Structures and Algorithms (DSA) and take you through the content of the course.
 featuredImage: introduction-to-dsa.jpg
 series: Data Structures and Algorithms - A complete course
@@ -34,6 +34,6 @@ The common operations performed on data structures are *Sorting, Merging, Deleti
 
 An algorithm is a finite set of instructions that accomplishes a particular task. It is a high level (human-readable), language-independent description of a step by step process for solving a problem. Algorithms and Data Structures together make a computer program that solves a problem like storing phone numbers of people alphabetically efficiently. 
 
-That's it for this one. In the next article, I will talk about Performance Analysis. Please reach out to me on [twitter](twitter.com/nikhilvatss) if you have any suggestions or requests.
+That's it for this one. In the next article, I will talk about Performance Analysis. Please reach out to me on [twitter](https://twitter.com/NikhilVatss) if you have any suggestions or requests.
 
  
