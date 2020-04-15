@@ -1,4 +1,5 @@
 ---
+id: 2
 title: Introduction to DSA
 date: March 18, 2020
 description: This post will introduce you to the basics of Data Structures and Algorithms (DSA) and take you through the content of the course.

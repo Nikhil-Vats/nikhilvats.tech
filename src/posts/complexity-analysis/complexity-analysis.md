@@ -1,4 +1,5 @@
 ---
+id: 3
 title: Complexity Analysis
 date: March 18, 2020
 description: In this article, we will discuss different kinds of complexity analysis like the worst case, best case, and average case. We will also discuss various asymptotic notations which will enable us to analyze the performance of programs.

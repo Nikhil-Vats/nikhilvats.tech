@@ -8,7 +8,7 @@ import Head from "../components/head";
 const BlogPage = () => {
     const data = useStaticQuery(graphql`
         query {
-            allMarkdownRemark {
+            allMarkdownRemark(sort: {fields: [frontmatter___id], order: DESC}) {
                 edges {
                     node {
                         timeToRead

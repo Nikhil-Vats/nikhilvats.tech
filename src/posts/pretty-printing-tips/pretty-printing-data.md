@@ -1,4 +1,5 @@
 ---
+id: 1
 title: Pretty printing data in console
 date: 30 Jan, 2020
 description: As web developers we spend a lot of time going through complex nested data, read this blog to learn two ways to pretty-print data to save time and make debugging easier!
