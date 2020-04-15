@@ -16,13 +16,13 @@ module.exports = {
       {
         heading: 'Intermine',
         link: 'https://github.com/intermine',
-        location: 'Contributor and Mentor',
+        location: 'Remote',
         description: [
-          'Contributing to InterMine Data Browser Tool used for exploring semi-homogeneous biological datasets',
-          'Mentoring GSoC and Outreachy 2020 applicants',
+          'Contributing to InterMine Data Browser Tool used for exploring semi-homogeneous biological datasets.',
+          'Mentoring GSoC and Outreachy 2020 applicants.',
           'Contributing to other projects like Bluegenes (used for Genomic data discovery).'
         ], 
-        role: 'Developer',
+        role: 'Mentor',
         date: 'January - Present'
       },
       {
@@ -33,7 +33,7 @@ module.exports = {
           'Built a command line tool (over 200 downloads) using NodeJS, InquirerJS and yeoman.',
           'Developed a web component - BioJS Homology Tool having over 300 downloads on npm.',
           'Upgraded Complex Viewer which shows web based visualisations of molecular interaction data to a web component.',
-          'Upgraded WebGL based Protein Viewer to a web component'
+          'Upgraded WebGL based Protein Viewer to a web component.'
         ], 
         role: 'Student',
         date: 'May - Aug, 2019'
@@ -43,7 +43,7 @@ module.exports = {
         link: 'https://algokart.in/',
         location: 'Remote',
         description: [
-          'Developed the admin panel using Node.js, React.js',
+          'Developed the admin panel using Node.js, React.js.',
           'Improved the UX by introducing new features like showing complete pricing details, discount comparisons on different subscriptions and trading algorithms.'
         ], 
         role: 'Developer',
@@ -78,10 +78,10 @@ module.exports = {
         link: 'https://screenninja.in/',
         location: 'Remote',
         description: [
-          'Migrated the backend from Google Firebase to MongoDB, Node.js',
-          'Migrated the server from Google Firebase to Digital Ocean',
-          'Developed the admin dashboard using Node.js, React.js, Redux',
-          'Improved the UX by introducing new features',
+          'Migrated the backend from Google Firebase to MongoDB, Node.js.',
+          'Migrated the server from Google Firebase to Digital Ocean.',
+          'Developed the admin dashboard using Node.js, React.js, Redux.',
+          'Improved the UX by introducing new features.',
         ], 
         role: 'Developer',
         date: 'February - April, 2019'
