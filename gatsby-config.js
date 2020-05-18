@@ -26,6 +26,19 @@ module.exports = {
         date: 'January - Present'
       },
       {
+        heading: 'DaanCorona',
+        link: 'https://daancorona.tech',
+        location: 'Remote',
+        description: [
+          'Worked on a passion project to help local businesses affected by COVID-19.',
+          'Customers can donate money to local businesses and get vouchers in return which can be redeemed once situation gets normal.',
+          'Pilot launch in Rajasthan - Over 10k+ donations in the first 2 days of launch!',
+          'Designed and developed the website using React.js and Django.'
+        ],
+        role: 'Core Team Member',
+        date: 'April 2020 - Present'
+      },
+      {
         heading: 'GSoC 2019 @ OBF',
         link: 'https://summerofcode.withgoogle.com/archive/2019/projects/4928963908993024/',
         location: 'Remote',
