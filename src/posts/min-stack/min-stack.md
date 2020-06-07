@@ -45,38 +45,45 @@ All the above operations take O(1) time. Now, in our problem, there's just 1 add
 Let **s** be the stack, **x** be the element to be inserted and **minElem** be the current minimum element. Occasionally, we will denote the previous minimum element (before it was updated) by **prevMinElem**.
 - **Push Operation**
 ```
-void push(x) {
-1. if(s.empty()) {
-2.    s.push(x);
-3.    minElem = x;
-4. } else if(x < minElem) {     // then x is the new minimum element
-5.     s.push(2*x-minElem);
-6.     minElem = x;
-7. } else
-8.     s.push(x);
-}
+    void push(x) {
+    1. if(s.empty()) {
+    2.    s.push(x);
+    3.    minElem = x;
+    4. } else if(x < minElem) {     // then x is the new minimum element
+    5.     s.push(2*x-minElem);
+    6.     minElem = x;
+    7. } else
+    8.     s.push(x);
+    }
 ```
- A. In line 5, we push **2*x - minElem** and not **x**, this is to keep track of previous the minimum element as we will see in a minute.
- B. Note that, the topmost element i.e. 2*x - minElem is less than x (the new min element) because -
+
+A. In line 5, we push **2*x - minElem** and not **x**, this is to keep track of previous the minimum element as we will see in a minute.
+
+B. Note that, the topmost element i.e. 2*x - minElem is less than x (the new min element) because -
 x < minElem (the old one)
+
 => x - minElem < 0
+
 => x - minElem + x < x (Add x on both sides)
+
 => **2x -  minElem < x**
+
 Hence, now the **topmost element of stack** is less than **minElem**.
 
 - **Pop Operation**
 ```
-void pop() {
-1. if(s.empty())
-2.    cout<<"Stack empty";
-3. else {
-4.     int top = s.top();
-5.     s.pop();
-6.     if(top < minElem)
-7.         minElem = 2*minElem - top;
-8. }
-}
+    void pop() {
+    1. if(s.empty())
+    2.    cout<<"Stack empty";
+    3. else {
+    4.     int top = s.top();
+    5.     s.pop();
+    6.     if(top < minElem)
+    7.         minElem = 2*minElem - top;
+    8. }
+    }
 ```
+
 A. In **Line 6**, we check if the element to be removed is less than the minimum element, this will happen if the last element inserted was the minimum element, so, as explained in push operation above, we stored **2*x - minElem in the topmost element** and updated the **minElem to store x**.
 
 B. **Line 7** is the key step if we expand the expression above -
@@ -97,7 +104,9 @@ int top() {
 5.     return top;
 }
 ```
+
 A. In **line 2**, we check if top < minElem, if it is the case then we return minElem as we know that we pushed **2*x-prevMinElem** in the stack (hence top = 2*x - minElem) and **x** in **minElem**. 
+
 B. If top is not < minElem, then we simply return minElem.
 
 You are welcome to try the problem in your IDE now. If you are stuck anywhere, come back to the blog. 
